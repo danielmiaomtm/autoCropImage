@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <html>
+    <body>
+
+<div id="pictureBlock">
+    <div>
+        <ul id="gallery">
+        </ul>
+    </div>
+</div>
+
+<script>
+    var gal = document.getElementById('gallery');
+    
+    for (var i = 0; i < 10 ; i++) {
+        gal.innerHTML += "<li><img src='" + i + ".jpg' height='200' style='margin:10px 10px'/><img src='result_" + i + ".jpg' height='200' style='margin:10px 10px'/></li>";
+    };
+</script>
+
+
+    </body>
+</html>
