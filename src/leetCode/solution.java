@@ -1,4 +1,4 @@
-package leetCode;
+package autoCropImage;
 
 import java.util.*;
 import java.io.BufferedReader;
@@ -83,7 +83,7 @@ public class solution {
 			
 		}
 		
-		
+//test URL		
 //		mainFunction("https://peekabuy.s3.amazonaws.com/products/image/5d6ecd2089099608f836b3e417773022.jpg", 0);
 		
 		
@@ -114,14 +114,14 @@ public class solution {
 				    e.printStackTrace();
 				}
 				
-		// get the matrix from greyscale image
-//				System.out.println("before width  " + img.getWidth());
+// 			get the matrix from greyscale image
+//			System.out.println("before width  " + img.getWidth());
 //		        System.out.println("before height  " + img.getHeight());
 				toGray(img);
 				
-//				System.out.println("after width  " + img.getWidth());
+//			System.out.println("after width  " + img.getWidth());
 //		        System.out.println("after height  " + img.getHeight());
-//				String geryFileName = System.getProperty("user.dir") + "/grey_" + newName;
+//			String geryFileName = System.getProperty("user.dir") + "/grey_" + newName;
 				String geryFileName = System.getProperty("user.dir") + "/grey_" + index + ".jpg";
 				
 				saveImageBufferedImage(img, "jpg", geryFileName);
@@ -129,7 +129,7 @@ public class solution {
 				Raster raster = img.getData();
 				int w = img.getWidth();
 				int h = img.getHeight();
-//				System.out.println("after width  " + img.getWidth());
+//			System.out.println("after width  " + img.getWidth());
 //		        System.out.println("after height  " + img.getHeight());
 				int[][] imageMatrix = new int[w][h];
 				
@@ -139,9 +139,9 @@ public class solution {
 				    }
 				}
 						
-//				int[][] imageMatrix = convertTo2DWithoutUsingGetRGB(img);
+//			int[][] imageMatrix = convertTo2DWithoutUsingGetRGB(img);
 				
-		// return the crop frame: top, bottom, left, right 		
+			// return the crop frame: top, bottom, left, right 		
 //				for(int[] row : imageMatrix) {
 //					for (int i : row) {
 //			            System.out.print(i);
